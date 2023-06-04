@@ -1,13 +1,15 @@
 use std::time::{SystemTime, UNIX_EPOCH};
 
+use serde::{Deserialize, Serialize};
+
 use crate::proof_of_work;
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
 pub struct Block {
     timestamp: u64,
     prev_block_hash: String,
     data: String,
-    hash: String,
+    pub hash: String,
     nonce: u32,
 }
 
