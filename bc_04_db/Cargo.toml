@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 num = "0.4.0"
 sha256 = "1.1.3"
-siamesedb = "0.1.21"
 bincode = "1.3.3"
 serde = { version = "1.0.163", features = ["derive"] }
+pickledb = "0.5.1"
+anyhow = "1.0.71"

@@ -7,7 +7,7 @@ use crate::proof_of_work;
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Block {
     timestamp: u64,
-    prev_block_hash: String,
+    pub prev_block_hash: String,
     data: String,
     pub hash: String,
     nonce: u32,
